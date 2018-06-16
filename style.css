@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+
+:root {
+	--grey: #15191c;
+	--heading-grey: #262833;
+	--text-grey: #424659;
+	--text-blue: #757991;
+	--blue: #040A1F;
+	--orange: #ED5849;
+	--yellow: #fecf33;
+	--peach: #ee6723;
+	--heading-size: 2.5em;
+	--p-size: 1.2em;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Open Sans;
+	color: var(--grey);
+}
+
+/*---NAV STYLES---*/
+
+nav {
+	color: white;
+	position: fixed;
+	display: flex;
+	height: 100px;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+	padding-top: 1%;
+	transition: .5s;
+	transition-timing-function: ease-in;
+}
+
+nav #logo {
+	margin-left: 3%;
+}
+
+nav ul {
+	margin-right: 3%;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 5px 10px;
+	border-bottom: 2px solid rgba(0,0,0,0);
+	font-size: 1.2em;
+	cursor: pointer;
+}
+
+nav ul li:hover {
+	border-bottom: 2px solid white;
+}
+
+nav #burger-menu-btn {
+	display: none; 
+	height: 30px;
+	width: 40px;
+}
+
+.burger-menu {
+	position: fixed;
+	display: none;
+	flex-direction: column;
+	width: 90%;
+	border-radius: 5px;
+	background: white;
+	margin-left: 5%;
+	margin-top: 75px;
+	box-shadow: 1px 1px 10px grey;
+}
+
+.burger-menu ul {
+	list-style: none;
+}
+
+.burger-menu ul li {
+	padding: 10px 0;
+	color: var(--orange);
+	font-weight: 600;
+}
+
+.active {
+	display: flex;
+}
+
+
+/*---- HEADER STYLES ----*/
+.header {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: var(--orange);
+	height: 100vh;
+	width: 100%;
+	color: white;
+	background: linear-gradient(to bottom, rgba(237, 88, 73, 0.7) 100%, rgba(237, 88, 73, 0.7) 100%), url("https://image.redbull.com/rbcom/010/2015-02-27/1331708461022_2/0010/1/1500/1000/1/league-of-legends-at-wembley-arena.jpg") center center no-repeat;
+	background-size: cover;
+}
+
+.header-text {
+	margin-left: 3%;
+	width: 45%;
+}
+
+.header-text h1 {
+	text-transform: uppercase;
+	font-size: 3.5em;
+	line-height: 60px; 
+}
+
+.header-text p {
+	width: 80%;
+	margin-top: -20px;
+	font-size: 1em;
+}
+
+
+/*---- ABOUT US STYLES ----*/
+
+.about-container {
+	color: var(--grey);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	display: flex;
+	height: 1000px;
+	width: 90%;
+	padding: 110px 0 50px 0;
+	padding-top: 110px; 
+}
+
+.about-us {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 20%;
+	height: 70%;
+	font-size: 16px;
+	color: var(--text-grey);
+}
+
+.about-us h1 {
+	color: var(--heading-grey);
+	font-size: var(--heading-size);
+	font-weight: 800;
+	margin-bottom: -10px; 
+}
+
+.about-us a {
+	text-align: center;
+	width: 50%;
+	margin-top: 20px;
+	padding: 15px 0 15px 15px;
+	font-size: 14px;
+	color: white;
+	background: var(--heading-grey);
+	border-radius: 25px;
+	text-decoration: none;
+}
+
+.about-us a img {
+	position: absolute;
+	margin: -8px -30px; 
+}
+
+.cards {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 70%;
+}
+
+.cards-row {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 50%;
+	padding: 20px 0;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	width: 20%;
+	max-height: 100%;
+	text-align: center;
+}
+
+.card h3 {
+	text-transform: uppercase;
+	text-align: center;
+	margin: 8px auto;
+}
+
+#small {
+	margin-top: -10px;
+	color: var(--text-blue);
+	font-size: 0.8em;
+}
+
+.photo-card {
+	height: 180px;
+	width: 180px;
+	border-radius: 100%;
+}
+
+.photo-card img {
+	position: absolute;
+	margin-top: 130px;
+	margin-left: 40px;
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	border: 3px solid white; 
+}
+
+.logos-container {
+	width: 95%; 
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px 0;
+	height: 50px;
+}
+
+.logos-container img {
+	filter: grayscale(100);
+	max-height: 60px;
+	max-width: 90px;
+}
+
+#photo-1 {
+	background: url('./images/placeholder.png') center center;
+	background-size: cover; 
+}
+
+#photo-2 {
+	background: url('https://vignette.wikia.nocookie.net/en.futurama/images/0/00/Bender_-_524px.png/revision/latest?cb=20140630135434') center center;
+	background-size: cover;
+}
+
+#photo-3 {
+	background: url('http://images.fanpop.com/images/image_uploads/Dr--Zoidberg-futurama-66790_453_446.gif') center center;
+	background-size: cover;
+}
+
+#photo-4 {
+	background: url('https://img00.deviantart.net/9e4b/i/2004/254/b/7/fan_art__zapp_brannigan_by_dover19.jpg') center center;
+	background-size: cover;
+}
+
+#photo-5 {
+	background: url('http://static.tvtome.com/images/genie_images/news_hub/uploaded/adaglasnews137806955615/futurama_professor.png') center center;
+	background-size: cover;
+}
+
+#photo-6 {
+	background: url('https://i.ytimg.com/vi/8WtBr187rNM/maxresdefault.jpg') center center;
+	background-size: cover;
+}
+
+
+.slider {
+	display: none;
+}
+
+/*---- PRODUCT STYLES ----*/
+
+.product-container {
+	padding-top: 110px;
+	width: 100%;
+}
+
+.product-container h1 {
+	color: var(--heading-grey);
+	font-size: var(--heading-size);
+	width: 90%;
+	margin: 2% auto;
+	font-weight: 800;
+}
+
+.fnatic {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	margin: 20px auto;
+	padding: 8% 0;
+	background: var(--grey);
+}
+
+.fnatic-left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+}
+
+.fnatic-left img {
+	max-height: 100%;
+	max-width: 70%;
+}
+
+.fnatic-right {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+}
+
+.fnatic-text {
+	height: 80%;
+	width: 95%;
+}
+
+.fnatic-text h2 {
+	font-size: 2em;
+}
+
+.fnatic-text p {
+	color: lightgrey;
+	line-height: 30px;
+	font-size: 1em;
+}
+
+.kokyo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	padding: 8% 0;
+	margin: 20px auto;
+	background: var(--blue);
+}
+
+.kokyo-left {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 30%;
+}
+
+.kokyo-text h2 {
+	font-size: 2em;
+	margin-bottom: 3px;
+}
+
+.kokyo-text p {
+	color: lightgrey;
+	line-height: 30px;
+	font-size: 1em;
+}
+
+.kokyo-text .input {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	border-bottom: 3px solid grey;
+}
+
+.kokyo-text .input img {
+	width: 30px;
+	margin-right: 8px;
+}
+
+.kokyo-text input {
+	color: grey;
+	width: 100%;
+	height: 50px;
+	font-size: 1.3em;
+	border: none;
+	background: var(--blue);
+}
+
+.kokyo-text input:focus {
+	outline: none;
+}
+
+.kokyo-text button {
+	background: none;
+	border: none;
+}
+
+.kokyo-right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+}
+
+.kokyo-right img {
+	max-height: 100%;
+	max-width: 70%;
+}
+
+.app-store-size {
+	height: 50px;
+	padding-right: 15px;
+}
+
+/*---- CONTACT STYLES ----*/
+
+.contact-container {
+	color: var(--grey);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	display: flex;
+	height: 850px;
+	width: 90%;
+	padding: 6% 0;
+}
+
+.contact-info {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 30%;
+	padding: 0 2%;
+}
+
+.contact-info h1 {
+	font-size: 2em;
+	font-weight: 800;
+}
+
+.contact-info h2 {
+	font-size: 1.5em;
+	color: var(--light-grey);
+}
+
+.contact-info p {
+	margin-top: -10px;
+	font-size: 1.2em;
+	color: var(--light-grey);
+}
+
+.contact-info a {
+	margin-top: -10px;
+	font-size: 1.2em;
+	color: blue;
+	text-decoration: none;
+}
+
+#map {
+	height: 80%;
+	width: 70%;
+}
+
+
+/*---- FOOTER STYLES ----*/
+
+footer {
+	color: white;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 250px;
+	background: var(--orange);
+}
+
+.footer-content {
+	text-align: center;
+	margin: 10px auto;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-content a {
+	color: white;
+	text-decoration: none;
+}
+
+.footer-content img {
+	padding: 25px;
+	margin:0 auto;
+	height: 80px;
+	width: 80px;
+}
