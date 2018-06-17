@@ -9,11 +9,55 @@
 		width: 40px;
 		margin-right: 3%;
 	}
+
+	.about-container a {
+		font-size: 0.7em;
+	}
 }
 
-@media only screen and (max-width : 710px) {
+@media only screen and (max-width : 768px) {
 
-	/*change about us cards for slider*/
+	.about-container {
+		height: 700px;
+		padding: 160px 0 0 0; 
+	}
+
+	.about-container a img {
+		margin: -22px -35px;
+	}
+
+	.cards {
+		display: none;
+	}
+
+	.card {
+		margin-top: 10px;
+		width: 90%;
+	}
+
+	.slider {
+		display: flex;
+		justify-content: center;
+		width: 90%;
+	}
+
+	.logos-container {
+		width: 50%;
+		padding: 25px 0 0 0 ;
+	}
+
+	#small {
+		margin: 0;
+	}
+
+	.small {
+		margin: 0;
+	}
+
+	.card h3, .card p {
+		margin: 0;
+		padding: 2px 0;
+	}
 
 }
 
@@ -43,6 +87,13 @@
 		font-size: 0.7em;
 	}
 
+	.about-container a {
+		font-size: 0.7em;
+	}
+
+	.about-container a img {
+		margin: -18px -35px;
+	}
 
 	.about-us {
 		width: 90%;
@@ -52,41 +103,33 @@
 		font-size: 2em;
 	}
 
-
-	/*---- ABOUT US STYLES ----*/
-
-	.about-container {
-		height: 700px;
-		padding: 160px 0 0 0; 
+	.fnatic-left img {
+		margin-top: -70px;
 	}
 
-	.cards {
-		display: none;
+	.kokyo-right img {
+		margin-top: -70px;
 	}
 
-	.card {
-		margin-top: 10px;
-		width: 90%;
+	.product-container p {
+		font-size: 0.7em;
 	}
 
-	.slider {
-		display: flex;
-		justify-content: center;
-		width: 90%;
+	.product-container h2 {
+		font-size: 1.5em;
 	}
 
-	.card h3, .card p {
-		margin: 0;
-		padding: 2px 0;
+	.kokyo-text input {
+		font-size: 0.8em;
+		height: 30px;
 	}
 
-	.logos-container {
-		width: 50%;
-		padding: 10px 0 0 0 ;
+	.kokyo-text .input {
+		border-bottom: 2px solid grey;
 	}
 
-	#small {
-		margin: 0;
+	.kokyo-text .input img {
+		width: 20px;
+		margin-right: 0px;
 	}
-
 }

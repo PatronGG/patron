@@ -1,4 +1,51 @@
 
+// Slider Object
+let cards = [
+  {
+    photo: './images/placeholder.png',
+    name: 'Dean Burrows',
+    title: 'CEO, Head of Product',
+    text: 'Built awesome products at ChallengeMe.GG and Hubrick',
+    logos: [`<img src="./images/cme-logo.png">`, `<img src="./images/hubrick-logo.jpg">`],
+  },
+  {
+    photo: './images/bitkraft-logo.png',
+    name: 'Jens Hilgers',
+    title: 'Founder, Advisor',
+    text: 'The \'Godfather of Esports\'. Built ESL, BITKRAFT & Dojo Madness',
+    logos: [`<img src="./images/esl-logo.png">`, `<img src="./images/bitkraft-logo.png">`]
+  },
+  {
+    photo: './images/placeholder.png',
+    name: 'Michael Arnold',
+    title: 'Founder, Advisor',
+    text: 'Founding team @ NeoReach (SF Based Startup). Also Wooga.',
+    logos: [`<img src="./images/hubrick-logo.jpg">`]
+  },
+  {
+    photo: './images/bitkraft-logo.png',
+    name: 'Dominic Graefin',
+    title: 'Lead Developer',
+    text: '10+ years experience. Built games at Wooga for 50M monthly active users.',
+    logos: [`<img src="./images/wooga-logo.png">`]
+  },
+  {
+    photo: './images/placeholder.png',
+    name: 'Gustavo Brunoro',
+    title: 'Senior Developer',
+    text: '6+ years of experience building scalable mobile apps, worked at Wooga.',
+    logos: [`<img src="./images/wooga-logo.png">`]
+  },
+  {
+    photo: './images/bitkraft-logo.png',
+    name: 'Elliot Rarden',
+    title: 'Junior Developer',
+    text: '4+ years of experience in JS/Android development. Worked at Echostar.',
+    logos: [`<img src="./images/wooga-logo.png">`]
+  },
+];
+
+
 //Nav Buttons Scroll 
 const btns = document.querySelectorAll('.btn');
 
@@ -59,6 +106,46 @@ function fadeIn() {
 window.addEventListener('scroll', fadeIn);
 
 
+// SLIDER
+const btnRight = document.getElementById('slider-left');
+const btnLeft = document.getElementById('slider-right');
+let x = 0;
+
+let photo = document.getElementById('slider-photo');
+let name = document.getElementById('slider-name');
+let title = document.getElementById('slider-title');
+let text = document.getElementById('slider-text');
+let logos = document.getElementById('slider-logos');
+
+function update() {
+  photo.style.background = `url(${cards[x].photo}) center center no-repeat`;
+  photo.style.backgroundSize = 'cover';
+  name.innerHTML = cards[x].name;
+  title.innerHTML = cards[x].title;
+  text.innerHTML = cards[x].text;
+  logos.innerHTML = cards[x].logos.join(' ');
+}
+
+btnRight.addEventListener('click', () => {
+  if(x < cards.length - 1) {
+    x++;
+    update();
+  } else {
+    x = 0;
+    update();
+  }
+});
+
+btnLeft.addEventListener('click', () => {
+  if(x == 0) {
+    x = cards.length - 1;
+    update();
+  } else {
+    x --;
+    update();
+  }
+});
+
 
 // MAP
 function initMap() {
@@ -72,3 +159,5 @@ function initMap() {
     map: map
   });
 }
+
+update();

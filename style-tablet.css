@@ -47,9 +47,22 @@
 		text-align: center;
 	}
 
+	.about-us a {
+		width: 25%;
+	}
+
+	.about-us a img {
+		position: absolute;
+		margin: -28px -35px; 
+	}
+
 	.about-us * {
 		margin: 0 auto;
 		padding: 2% 0;
+	}
+
+	.about-container a {
+		padding: 15px 30px 15px 45px;
 	}
 
 	/*---- ABOUT US - CARDS STYLES ----*/
@@ -108,16 +121,25 @@
 		width: 100%;
 	}
 
+	.product-container p {
+		font-size: 0.8em;
+	}
+
 	.fnatic-left img {
 		max-height: 80%;
 		max-width: 50%;
-		margin-top: -120px;
+		margin-top: -110px;
 	}
 
 	.fnatic-right {
 		margin-top: 50px;
 		text-align: center;
 		width: 70%;
+	}
+
+	.app-store-size {
+		height: 35px;
+		padding-right: 10px;
 	}
 
 	.kokyo {
@@ -130,10 +152,15 @@
 		width: 70%;
 	}
 
+	.kokyo-right {
+		align-items: flex-start;
+		width: 100%;
+	}
+
 	.kokyo-right img {
+		margin-top: -110px;
 		max-height: 80%;
-		/*max-width: 50%*/
-		margin-top: -120px;
+		max-width: 50%;
 	}
 
 	/*---- CONTACT US STYLES ----*/
