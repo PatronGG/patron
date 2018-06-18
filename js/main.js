@@ -7,41 +7,47 @@ let cards = [
     title: 'CEO, Head of Product',
     text: 'Built awesome products at ChallengeMe.GG and Hubrick',
     logos: [`<img src="./images/cme-logo.png">`, `<img src="./images/hubrick-logo.jpg">`],
+    dots: `<div class="dot-solid"></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot"></div>`
   },
   {
     photo: './images/bitkraft-logo.png',
     name: 'Jens Hilgers',
     title: 'Founder, Advisor',
     text: 'The \'Godfather of Esports\'. Built ESL, BITKRAFT & Dojo Madness',
-    logos: [`<img src="./images/esl-logo.png">`, `<img src="./images/bitkraft-logo.png">`]
+    logos: [`<img src="./images/esl-logo.png">`, `<img src="./images/bitkraft-logo.png">`],
+    dots: `<div class="dot"></div><div class="dot-solid"></div></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot"></div>`
   },
   {
     photo: './images/placeholder.png',
     name: 'Michael Arnold',
     title: 'Founder, Advisor',
     text: 'Founding team @ NeoReach (SF Based Startup). Also Wooga.',
-    logos: [`<img src="./images/hubrick-logo.jpg">`]
+    logos: [`<img src="./images/hubrick-logo.jpg">`],
+    dots: `<div class="dot"></div><div class="dot"></div></div><div class="dot-solid"></div></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot"></div>`
   },
   {
     photo: './images/bitkraft-logo.png',
     name: 'Dominic Graefin',
     title: 'Lead Developer',
     text: '10+ years experience. Built games at Wooga for 50M monthly active users.',
-    logos: [`<img src="./images/wooga-logo.png">`]
+    logos: [`<img src="./images/wooga-logo.png">`],
+    dots: `<div class="dot"></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot-solid"></div></div><div class="dot"></div></div><div class="dot"></div>`
   },
   {
     photo: './images/placeholder.png',
     name: 'Gustavo Brunoro',
     title: 'Senior Developer',
     text: '6+ years of experience building scalable mobile apps, worked at Wooga.',
-    logos: [`<img src="./images/wooga-logo.png">`]
+    logos: [`<img src="./images/wooga-logo.png">`],
+    dots: `<div class="dot"></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot-solid"></div></div><div class="dot"></div>`
   },
   {
     photo: './images/bitkraft-logo.png',
     name: 'Elliot Rarden',
     title: 'Junior Developer',
     text: '4+ years of experience in JS/Android development. Worked at Echostar.',
-    logos: [`<img src="./images/wooga-logo.png">`]
+    logos: [`<img src="./images/wooga-logo.png">`],
+    dots: `<div class="dot"></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot-solid"></div>`
   },
 ];
 
@@ -84,13 +90,17 @@ submit.addEventListener('click', mailListAdd);
 
 function mailListAdd(e) {
   e.preventDefault();
-  console.log(input.value);
-  input.value = "";
+  let regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  if(input.value.match(regex)) {
+    console.log(input.value);
+    input.value = "";
+  }
 }
 
 
 
-// NAV FADEIN
+// NAVBAR BACKGROUND FADEIN
 const header = document.querySelector('.header');
 const navBar = document.querySelector('nav');
 
@@ -116,6 +126,7 @@ let name = document.getElementById('slider-name');
 let title = document.getElementById('slider-title');
 let text = document.getElementById('slider-text');
 let logos = document.getElementById('slider-logos');
+let dots = document.querySelector('.dots');
 
 function update() {
   photo.style.background = `url(${cards[x].photo}) center center no-repeat`;
@@ -124,6 +135,7 @@ function update() {
   title.innerHTML = cards[x].title;
   text.innerHTML = cards[x].text;
   logos.innerHTML = cards[x].logos.join(' ');
+  dots.innerHTML = cards[x].dots;
 }
 
 btnRight.addEventListener('click', () => {

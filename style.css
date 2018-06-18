@@ -73,10 +73,15 @@ nav #burger-menu-btn {
 	margin-left: 5%;
 	margin-top: 110px;
 	box-shadow: 1px 1px 10px grey;
+	z-index: 100;
 }
 
 .burger-menu ul {
 	list-style: none;
+}
+
+.burger-menu a {
+	text-decoration: none;
 }
 
 .burger-menu ul li {
@@ -203,6 +208,10 @@ nav #burger-menu-btn {
 	margin: 8px auto;
 }
 
+.card * {
+	transition: 0.5s;
+}
+
 #small {
 	margin-top: -10px;
 	color: var(--text-blue);
@@ -244,6 +253,28 @@ nav #burger-menu-btn {
 	filter: grayscale(100);
 	max-height: 60px;
 	max-width: 90px;
+}
+
+.dots {
+	display: flex;
+	padding: 20px 0;
+	height: 10px;
+	width: 50%;
+	justify-content: space-around;
+}
+
+.dot {
+	height: 8px;
+	width: 8px;
+	background: lightgrey;
+	border-radius: 100%; 
+}
+
+.dot-solid {
+	height: 8px;
+	width: 8px;
+	background: black;
+	border-radius: 100%; 
 }
 
 #photo-1 {
