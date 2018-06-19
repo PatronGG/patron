@@ -162,7 +162,7 @@ nav #burger-menu-btn {
 
 .about-us a {
 	text-align: center;
-	width: 50%;
+	width: 60%;
 	margin-top: 20px;
 	padding: 15px 10px 15px 25px;
 	font-size: 14px;
@@ -487,9 +487,8 @@ nav #burger-menu-btn {
 }
 
 .app-store-size {
-	height: 60px;
+	height: 45px;
 	padding-right: 15px;
-	box-shadow: 1px 1px 5px #4f4f4f;
 }
 
 /*---- CONTACT STYLES ----*/
