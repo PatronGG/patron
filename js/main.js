@@ -88,44 +88,6 @@ function toggle() {
 
 
 
-// // EMAIL SUBMIT
-// const submit = document.getElementById('submit');
-// const input = document.getElementById('mailInput');
-
-// submit.addEventListener('click', mailListAdd);
-
-// function mailListAdd(e) {
-//   e.preventDefault();
-//   let regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-//   if(input.value.match(regex)) {
-//     addMail(input.value);
-//     input.value = "";
-//   }
-// }
-
-// function addMail(email) {
-//   let req = {
-//     "email_address": email,
-//     "status": "subscribed"
-//   }
-
-// let url = `https://patron.us18.list-manage.com/subscribe/post-json?u=28b112e4bfcc1f15428ffcda8&id=7c29065922&`
-
-// //https://patron.us14.list-manage.com/subscribe/post-json?u=fce559a91e6e59aa5d1e9f18d&id=72ed5a981f
-//   fetch('https://us18.api.mailchimp.com/3.0/lists/9e67587f52/members/', {
-//     method: 'post',
-//     body: JSON.stringify(req),
-
-//   }).then(function (data) {  
-//     console.log('Request success: ', data);  
-//   }).catch(function (error) {  
-//     console.log('Request failure: ', error);  
-//   });
-// }
-
-
-
 // NAVBAR BACKGROUND FADEIN
 const header = document.querySelector('.header');
 const navBar = document.querySelector('nav');
@@ -133,7 +95,7 @@ const navBar = document.querySelector('nav');
 function fadeIn() {
   var scrolled = header.getBoundingClientRect().top;
   if(scrolled <= -30) {
-    navBar.style.background = "#424659";
+    navBar.style.background = "#040A1F";
   } else if (scrolled > -30) {
     navBar.style.background = "none";
   }
