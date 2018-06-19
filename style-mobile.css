@@ -64,7 +64,7 @@
 	}
 
 	.app-store-size {
-		max-height: 45px;
+		height: 45px;
 		padding-right: 5px;
 	}
 }
@@ -130,6 +130,11 @@
 
 	.product-container h1 {
 		font-size: 2em;
+	}
+
+	.app-store-size {
+		height: 28px;
+		padding-right: 5px;
 	}
 
 	.kokyo-text input {

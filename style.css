@@ -235,8 +235,8 @@ nav #burger-menu-btn {
 	position: absolute;
 	margin-top: 130px;
 	margin-left: 40px;
-	height: 60px;
-	width: 60px;
+	height: 50px;
+	width: 50px;
 	border-radius: 100%;
 }
 
@@ -440,6 +440,7 @@ nav #burger-menu-btn {
 
 .kokyo-text .input {
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	width: 100%;
 	border-bottom: 3px solid grey;
@@ -485,8 +486,9 @@ nav #burger-menu-btn {
 }
 
 .app-store-size {
-	max-width: 80px;
+	height: 60px;
 	padding-right: 15px;
+	box-shadow: 1px 1px 5px #4f4f4f;
 }
 
 /*---- CONTACT STYLES ----*/
