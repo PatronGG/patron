@@ -1,4 +1,8 @@
 @media only screen and (max-width : 650px) {
+	nav {
+		height: 80px;
+	}
+
 	nav ul {
 		display: none;
 	}
@@ -18,7 +22,7 @@
 @media only screen and (max-width : 768px) {
 
 	.about-container {
-		height: 700px;
+		height: 800px;
 		padding: 160px 0 0 0; 
 	}
 
@@ -59,6 +63,10 @@
 		padding: 2px 0;
 	}
 
+	.app-store-size {
+		max-height: 45px;
+		padding-right: 5px;
+	}
 }
 
 @media only screen and (max-width : 430px) {
@@ -113,15 +121,21 @@
 
 	.product-container p {
 		font-size: 0.85em;
+		font-weight: 400;
 	}
 
 	.product-container h2 {
 		font-size: 1.5em;
 	}
 
+	.product-container h1 {
+		font-size: 2em;
+	}
+
 	.kokyo-text input {
-		font-size: 0.8em;
-		height: 30px;
+		font-size: 0.9em;
+		height: 40px;
+		width: 100%;
 		margin-left: 10px;
 	}
 
@@ -132,5 +146,57 @@
 	.kokyo-text .input img {
 		width: 20px;
 		margin-right: 0px;
+	}
+
+	.contact-container h1 {
+		font-size: 2em;
+	}
+
+	.footer-content {
+		padding: 10px 0;
+		font-size: 0.8em;
+	}
+
+	.footer-content p {
+		margin-top: -10px;
+		font-size: 0.7em;
+	}
+
+	.footer-content img {
+		padding: 6px;
+	}
+
+	footer {
+		height: 180px;
+	}
+}
+
+@media only screen and (max-width : 325px) {
+	nav #logo {
+		max-width: 150px;
+	}
+
+	.about-container {
+		padding-top: 220px;
+	}
+
+	.about-container a {
+		width: 60%;
+	}
+
+	.about-container a img {
+		margin: -18px -35px;
+	}
+
+	.product-container p {
+		font-size: 0.75em;
+	}
+
+	.kokyo-left input {
+		font-size: 0.6em;
+	}
+
+	.contact-container {
+		padding-top: 100px;
 	}
 }
