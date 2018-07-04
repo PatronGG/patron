@@ -2,7 +2,7 @@
 // Slider Object
 let cards = [
   {
-    photo: './images/placeholder.png',
+    photo: './images/profiles/dean.png',
     game: './images/league-logo.png',
     name: 'Dean Burrows',
     title: 'CEO, Head of Product',
@@ -11,7 +11,7 @@ let cards = [
     dots: `<div class="dot-solid"></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot"></div>`
   },
   {
-    photo: './images/bitkraft-logo.png',
+    photo: './images/profiles/jens.png',
     game: './images/csgo-logo.png',
     name: 'Jens Hilgers',
     title: 'Advisor',
@@ -20,7 +20,7 @@ let cards = [
     dots: `<div class="dot"></div><div class="dot-solid"></div></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot"></div>`
   },
   {
-    photo: './images/placeholder.png',
+    photo: './images/profiles/michael.png',
     game: './images/league-logo.png',
     name: 'Michael Arnold',
     title: 'Advisor',
@@ -29,7 +29,7 @@ let cards = [
     dots: `<div class="dot"></div><div class="dot"></div></div><div class="dot-solid"></div></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot"></div>`
   },
   {
-    photo: './images/bitkraft-logo.png',
+    photo: './images/profiles/dominic.png',
     game: './images/fifa-logo.png',
     name: 'Dominic Graefin',
     title: 'Lead Developer',
@@ -38,7 +38,7 @@ let cards = [
     dots: `<div class="dot"></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot-solid"></div></div><div class="dot"></div></div><div class="dot"></div>`
   },
   {
-    photo: './images/placeholder.png',
+    photo: './images/profiles/gus.png',
     game: './images/dota-logo.png',
     name: 'Gustavo Brunoro',
     title: 'Senior Developer',
@@ -47,11 +47,11 @@ let cards = [
     dots: `<div class="dot"></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot-solid"></div></div><div class="dot"></div>`
   },
   {
-    photo: './images/bitkraft-logo.png',
+    photo: './images/profiles/elliott.png',
     game: './images/league-logo.png',
-    name: 'Elliot Rarden',
-    title: 'Junior Developer',
-    text: '4+ years of experience in JS/Android development. Worked at Echostar.',
+    name: 'Elliott Rarden',
+    title: 'Developer',
+    text: '4+ years of experience in full-stack development.',
     logos: [`<img src="./images/echostar-logo.jpeg">`],
     dots: `<div class="dot"></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot"></div></div><div class="dot-solid"></div>`
   },

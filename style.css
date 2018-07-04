@@ -284,32 +284,32 @@ nav #burger-menu-btn {
 }
 
 #photo-1 {
-	background: url('./images/placeholder.png') center center;
+	background: url('./images/profiles/dean.png') center center;
 	background-size: cover; 
 }
 
 #photo-2 {
-	background: url('https://vignette.wikia.nocookie.net/en.futurama/images/0/00/Bender_-_524px.png/revision/latest?cb=20140630135434') center center;
+	background: url('./images/profiles/jens.png') center center;
 	background-size: cover;
 }
 
 #photo-3 {
-	background: url('http://images.fanpop.com/images/image_uploads/Dr--Zoidberg-futurama-66790_453_446.gif') center center;
+	background: url('./images/profiles/michael.png') center center;
 	background-size: cover;
 }
 
 #photo-4 {
-	background: url('https://img00.deviantart.net/9e4b/i/2004/254/b/7/fan_art__zapp_brannigan_by_dover19.jpg') center center;
+	background: url('./images/profiles/dominic.png') center center;
 	background-size: cover;
 }
 
 #photo-5 {
-	background: url('http://static.tvtome.com/images/genie_images/news_hub/uploaded/adaglasnews137806955615/futurama_professor.png') center center;
+	background: url('./images/profiles/gus.png') center center;
 	background-size: cover;
 }
 
 #photo-6 {
-	background: url('https://i.ytimg.com/vi/8WtBr187rNM/maxresdefault.jpg') center center;
+	background: url('./images/profiles/elliott.png') center center;
 	background-size: cover;
 }
 
